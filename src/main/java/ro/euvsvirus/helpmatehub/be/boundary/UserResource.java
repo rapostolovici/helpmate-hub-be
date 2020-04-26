@@ -35,15 +35,16 @@ public class UserResource {
         return User.listAll(Sort.by("firstName"));
     }
 
-//    @GET
-//    @Path("{id}")
-//    public User getSingle(@PathParam Long id) {
-//        User entity = User.findById(id);
-//        if (entity == null) {
-//            throw new WebApplicationException("User with id of " + id + " does not exist.", 404);
-//        }
-//        return entity;
-//    }
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("{id}")
+    public User getSingle(@PathParam Long id) {
+        User entity = User.findById(id);
+        if (entity == null) {
+            throw new WebApplicationException("User with id of " + id + " does not exist.", 404);
+        }
+        return entity;
+    }
 
     @POST
     @Transactional

@@ -26,6 +26,8 @@ public class User extends PanacheEntity {
     @Column(name="last_name")
     public String lastName;
 
+
+
     @Enumerated
     @Column(name = "user_category")
     private UserCategory userCategory;
@@ -34,9 +36,13 @@ public class User extends PanacheEntity {
     //TODO RAP: move to a base entity in the future
     //TODO RAP: create the sql migration script to add the columns to the user table
 
+
     @CreationTimestamp
+    @Column(name = "creation_date")
     public LocalDateTime creationDate;
+
     @UpdateTimestamp
+    @Column(name = "update_date")
     public LocalDateTime updatedDate;
 
 
