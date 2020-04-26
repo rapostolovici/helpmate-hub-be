@@ -1,6 +1,7 @@
 package ro.euvsvirus.helpmatehub.be.model.entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,8 +34,10 @@ public class User extends PanacheEntity {
     //TODO RAP: move to a base entity in the future
     //TODO RAP: create the sql migration script to add the columns to the user table
 
-    // @CreationTimestamp
-    // public LocalDate creationDate;
-    // @UpdateTimestamp
-    // public LocalDate updatedDate;
+    @CreationTimestamp
+    public LocalDateTime creationDate;
+    @UpdateTimestamp
+    public LocalDateTime updatedDate;
+
+
 }
