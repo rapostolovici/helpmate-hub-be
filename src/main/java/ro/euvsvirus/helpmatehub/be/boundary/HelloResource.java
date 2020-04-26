@@ -1,4 +1,4 @@
-package ro.euvsvirus.helpmatehub.be;
+package ro.euvsvirus.helpmatehub.be.boundary;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

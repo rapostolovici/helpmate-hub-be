@@ -1,0 +1,2 @@
+ALTER TABLE t_user ADD COLUMN creation_date TIMESTAMP;
+ALTER TABLE t_user ADD COLUMN update_date TIMESTAMP;
