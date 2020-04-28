@@ -23,11 +23,20 @@ public class User extends PanacheEntity {
     
     @Column(name = "first_name")
     public String firstName;
+
+
     @Column(name="last_name")
     public String lastName;
 
 
+    @Column(name="user_email")
+    public String userEmail;
 
+    
+    @Column(name="user_password")
+    public String userPassword;
+    
+    
     @Enumerated
     @Column(name = "user_category")
     private UserCategory userCategory;
@@ -44,6 +53,11 @@ public class User extends PanacheEntity {
     @UpdateTimestamp
     @Column(name = "update_date")
     public LocalDateTime updatedDate;
+
+    
+
+
+
 
 
 }
