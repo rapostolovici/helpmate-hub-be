@@ -8,3 +8,4 @@ CREATE TABLE t_user(
 );
 
 CREATE INDEX ON t_user (id);
+
